@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "judgekit"
+version = "0.1.0"
+description = "Composable LLM evaluation (judge + heuristics) with adapters and tracing"
+readme = "judgekit_prd.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "JudgeKit Authors" }]
+dependencies = [
+  "openai>=1.30.0",
+  "lmnr[all]>=0.7.19",
+  "dspy-ai>=2.5.0",
+]
+keywords = ["evaluation", "LLM", "tracing", "observability", "heuristics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+include = ["judgekit*"]
+
+[project.scripts]
+judgekit-factory = "judgekit.cli:factory_main"
+judgekit-eval = "judgekit.cli:eval_main"
+judgekit-loop = "judgekit.cli:loop_main"
+
+

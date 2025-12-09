@@ -1,0 +1,4 @@
+openai>=1.30.0
+lmnr[all]>=0.7.19
+dspy-ai>=2.5.0
+
