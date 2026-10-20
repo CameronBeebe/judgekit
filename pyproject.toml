@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "judgekit"
 version = "0.1.0"
 description = "Composable LLM evaluation (judge + heuristics) with adapters and tracing"
-readme = "judgekit_prd.md"
+readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "JudgeKit Authors" }]
